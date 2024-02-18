@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <img src="img/logo.svg" alt="" class="logo">
+        <div class="button button_frame">スタッフ紹介</div>
         <p>
             <a href="#">HOME</a>
              > スタッフ紹介
@@ -16,26 +19,81 @@
         <picture class="mv">
             <source srcset="img/mv-pc.jpg" media="(min-width: 768px)">
             <img src="img/mv-sp.jpg" alt="mv">
-          </picture>
+        </picture>
     </header>
     <main>
         <h1>スタッフ紹介</h1>
         <p>概要やリード文が入ります概要やリード文が入ります概要やリード文が入ります。 
             <br/>概要やリード文が入ります概要やリード文が入ります概要やリード文が入ります。
         </p>
-        <div class="staff">
-            <div class="staff_detail">
-                
-            </div>
+        <ul class="staff-container">
+            <li class="staff-container__item item_new">
+              <img src="img/staff-1.png" alt="">
+              <h4>名前が入ります（職種が入ります）</h4>
+              <p class="staff-container__date">2022年3月1日（火）</p>
+              <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
+              <p class="staff-container__more">続きを読む</p>
+            </li>
+            <li class="staff-container__item item_new">
+                <img src="img/staff-2.png" alt="">
+                <h4>名前が入ります（職種が入ります）</h4>
+                <p class="staff-container__date">2022年3月1日（火）</p>
+                <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
+                <p class="staff-container__more">続きを読む</p>
+              </li>
+              <li class="staff-container__item">
+                <img src="img/staff-3.png" alt="">
+                <h4>名前が入ります（職種が入ります）</h4>
+                <p class="staff-container__date">2022年3月1日（火）</p>
+                <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
+                <p class="staff-container__more">続きを読む</p>
+              </li>
+              <li class="staff-container__item">
+                <img src="img/staff-4.png" alt="">
+                <h4>名前が入ります（職種が入ります）</h4>
+                <p class="staff-container__date">2022年3月1日（火）</p>
+                <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
+                <p class="staff-container__more">続きを読む</p>
+              </li>
+              <li class="staff-container__item">
+                <img src="img/staff-5.png" alt="">
+                <h4>名前が入ります（職種が入ります）</h4>
+                <p class="staff-container__date">2022年3月1日（火）</p>
+                <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
+                <p class="staff-container__more">続きを読む</p>
+              </li>
+              <li class="staff-container__item">
+                <img src="img/staff-6.png" alt="">
+                <h4>名前が入ります（職種が入ります）</h4>
+                <p class="staff-container__date">2022年3月1日（火）</p>
+                <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
+                <p class="staff-container__more">続きを読む</p>
+              </li>
+        </ul>
+        <div>
+            <a class="button" href="">スタッフ一覧を見る</a>
         </div>
+        <ul class="banner-container">
+            <li class="banner-container__item">
+              <p>バナー</p>  
+            </li>
+        </ul>
     </main>
     <footer>
-        <ul class="banner">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+       <div class="footer-container">
+        <div class="footer-container__text">
+            <h4>テラノプロダクション</h4>
+            <p>東京都渋谷区ＸＸＸＸＸＸＸＸＸＸＸＸＸ<br/>ＸＸＸＸＸＸＸＸ　３階 
+                <br/>TEL 03-XXXX-XXXX　FAX 03-XXXX-XXXX
+            </p>
+        </div>
+        <ul class="footer-container__link">
+            <li>リンク</li>
         </ul>
+       </div>
+       <p class="copyright">
+        Copyright Terano Production All rights reserved.
+       </p>
     </footer>
 </body>
 </html>
