@@ -1,1 +1,126 @@
+$button-color:#1DDB07;
+$nav-current:#1558D6;
+$button-text:#FFFFFF;
+$back-ground:#F5F5F5;
+
+// 共通
+.pc-only{
+    display: none;
+}
+.wrap{
+    padding: 0 30px;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 13px;
+}
+
 // ヘッダー
+.logo{
+    margin-top: 26px;
+    text-align: center;
+}
+.header__nav{
+    margin-top: 21px;
+    font-size: 11px;
+    .current{
+       color: $nav-current;
+    }
+}
+
+.mv{
+    img{
+        margin-top: 18px;
+    }
+}
+
+// コンテナ
+.main-title{
+    margin-top: 43px;
+}
+.main-text{
+    margin-top: 24px;
+}
+.main-container{
+    margin: 83px 54px 0;
+    &__icon{
+        margin: 0 auto;
+        width: 210px;
+        height: 210px;
+        border: 10px solid #F1F1F1;
+        border-radius: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    &__title{
+        margin-top: 37px;
+        font-weight: bold;
+    }
+    &__date{
+        margin-top: 3px;
+        font-size: 11px;
+    }
+    &__text{
+        margin-top: 8px;
+    }
+    &__more{
+        margin-top: 13px;
+        &::after{
+            content: "";
+            display: inline-block;
+            margin-left: 7px;
+            width: 25px;
+            height: 5px;
+            border-bottom: 1px solid #707070;
+            border-right: 1px solid #707070;
+            transform: skew(45deg);
+          }
+    }
+ 
+    
+}
+.button{
+    margin: 83px auto 0;
+    color: $button-text;
+    width: 240px;
+    height: 44px;
+    background-color: $button-color;
+    border-radius: 12px;
+    text-align: center;
+    &__link{
+        line-height: 44px;
+        font-size: 13px;
+    }
+    &::after{
+        content: "";
+        display: inline-block;
+        margin-left: 21px;
+        margin-bottom: 3px;
+        width: 25px;
+        height: 5px;
+        border-bottom: 1px solid $button-text;
+        border-right: 1px solid $button-text;
+        transform: skew(45deg);
+    }
+   
+}
+
+// フッター
+footer{
+    background-color: $back-ground;
+.footer-container{
+    
+     margin-top: 83px;
+        &__link{
+            margin-top: 38px;
+        }
+    }
+}

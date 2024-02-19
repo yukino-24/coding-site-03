@@ -10,10 +10,12 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.svg" alt="" class="logo">
-        <div class="button button_frame">スタッフ紹介</div>
-        <p>
-            <a href="#">HOME</a>
+        <div class="logo">
+            <img src="img/logo.svg" width="238px" alt="">
+        </div>
+        <div class="button button_frame pc-only">スタッフ紹介</div>
+        <p class="header__nav wrap">
+            <a href="#" class="current">HOME</a>
              > スタッフ紹介
         </p>
         <picture class="mv">
@@ -22,74 +24,43 @@
         </picture>
     </header>
     <main>
-        <h1>スタッフ紹介</h1>
-        <p>概要やリード文が入ります概要やリード文が入ります概要やリード文が入ります。 
+        <h1 class="main-title wrap">スタッフ紹介</h1>
+        <p class="main-text wrap">概要やリード文が入ります概要やリード文が入ります概要やリード文が入ります。 
             <br/>概要やリード文が入ります概要やリード文が入ります概要やリード文が入ります。
         </p>
-        <ul class="staff-container">
-            <li class="staff-container__item item_new">
-              <img src="img/staff-1.png" alt="">
-              <h4>名前が入ります（職種が入ります）</h4>
-              <p class="staff-container__date">2022年3月1日（火）</p>
-              <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
-              <p class="staff-container__more">続きを読む</p>
+        <ul class="main-container">
+            <li class="main-container__item item_new">
+              <div class="main-container__icon">
+                <img class="" src="img/staff-1.png" alt="">
+              </div>
+              <h4 class="main-container__title">名前が入ります（職種が入ります）</h4>
+              <p class="main-container__date">2022年3月1日（火）</p>
+              <p class="main-container__text">インタビューテキストインタビューテキストインタビューテキストインタビューテキスト...</p>
+              <p class="main-container__more">続きを読む</p>
             </li>
-            <li class="staff-container__item item_new">
-                <img src="img/staff-2.png" alt="">
-                <h4>名前が入ります（職種が入ります）</h4>
-                <p class="staff-container__date">2022年3月1日（火）</p>
-                <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
-                <p class="staff-container__more">続きを読む</p>
-              </li>
-              <li class="staff-container__item">
-                <img src="img/staff-3.png" alt="">
-                <h4>名前が入ります（職種が入ります）</h4>
-                <p class="staff-container__date">2022年3月1日（火）</p>
-                <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
-                <p class="staff-container__more">続きを読む</p>
-              </li>
-              <li class="staff-container__item">
-                <img src="img/staff-4.png" alt="">
-                <h4>名前が入ります（職種が入ります）</h4>
-                <p class="staff-container__date">2022年3月1日（火）</p>
-                <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
-                <p class="staff-container__more">続きを読む</p>
-              </li>
-              <li class="staff-container__item">
-                <img src="img/staff-5.png" alt="">
-                <h4>名前が入ります（職種が入ります）</h4>
-                <p class="staff-container__date">2022年3月1日（火）</p>
-                <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
-                <p class="staff-container__more">続きを読む</p>
-              </li>
-              <li class="staff-container__item">
-                <img src="img/staff-6.png" alt="">
-                <h4>名前が入ります（職種が入ります）</h4>
-                <p class="staff-container__date">2022年3月1日（火）</p>
-                <p class="staff-container__text">インタビューテキストインタビューテキストイ ンタビューテキストインタビューテキスト...</p>
-                <p class="staff-container__more">続きを読む</p>
-              </li>
         </ul>
-        <div>
-            <a class="button" href="">スタッフ一覧を見る</a>
+        <div class="button">
+            <a class="button__link" href="">スタッフ一覧を見る</a>
         </div>
-        <ul class="banner-container">
+        <ul class="banner-container pc-only">
             <li class="banner-container__item">
               <p>バナー</p>  
             </li>
         </ul>
     </main>
     <footer>
+      
        <div class="footer-container">
+        <ul class="footer-container__link">
+            <li>リンク</li>
+        </ul>
         <div class="footer-container__text">
             <h4>テラノプロダクション</h4>
             <p>東京都渋谷区ＸＸＸＸＸＸＸＸＸＸＸＸＸ<br/>ＸＸＸＸＸＸＸＸ　３階 
                 <br/>TEL 03-XXXX-XXXX　FAX 03-XXXX-XXXX
             </p>
         </div>
-        <ul class="footer-container__link">
-            <li>リンク</li>
-        </ul>
+       
        </div>
        <p class="copyright">
         Copyright Terano Production All rights reserved.
