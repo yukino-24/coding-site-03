@@ -20,6 +20,11 @@ p{
     font-size: 13px;
 }
 
+h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
 // ヘッダー
 .logo{
     margin-top: 26px;
@@ -117,10 +122,36 @@ p{
 footer{
     background-color: $back-ground;
 .footer-container{
-    
      margin-top: 83px;
+
         &__link{
-            margin-top: 38px;
+            display: flex;
+            padding-top: 28px;
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                margin:10px 10px 0 0;
+                width: 120px;
+                height: 40px;
+                background-color: #fff;
+                border: 1px solid #D6D5D5;
+                text-align: center;
+                line-height: 40px;
+                font-size: 13px;
+            }
         }
     }
+.footer-container__text{
+    margin-top: 25px;
+    p{
+        margin-top: 17px;
+        font-size: 12px;
+    }
+}
+}
+.copyright{
+    padding-top: 35px;
+    padding-bottom: 34px;
+    font-size: 12px;
+    
 }
