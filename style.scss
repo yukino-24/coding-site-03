@@ -10,7 +10,7 @@ $accent-color:#FFF100;
     
 }
 @mixin button {
-    margin: 83px auto 0;
+    
     color: $button-text;
     width: 240px;
     height: 44px;
@@ -52,14 +52,17 @@ h4{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    
         }
         .logo{
             margin-top: 26px;
             text-align: center;
+    
         }
         .top-button{
+            
            @include button;
-           border: solid 1px #FFFFFF;
+           border: 1px double #FFFFFF;
            border-radius: 12px;
         }
     }
@@ -139,6 +142,7 @@ h4{
 
 .main-button{
    @include button;
+   margin: 83px auto 0;
     &::after{
         content: "";
         display: inline-block;

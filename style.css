@@ -37,7 +37,6 @@ h4 {
   text-align: center;
 }
 .header__top .top-button {
-  margin: 83px auto 0;
   color: #FFFFFF;
   width: 240px;
   height: 44px;
@@ -46,7 +45,7 @@ h4 {
   text-align: center;
   line-height: 44px;
   font-size: 13px;
-  border: solid 1px #FFFFFF;
+  border: 1px double #FFFFFF;
   border-radius: 12px;
 }
 .header__nav {
@@ -121,7 +120,6 @@ h4 {
 }
 
 .main-button {
-  margin: 83px auto 0;
   color: #FFFFFF;
   width: 240px;
   height: 44px;
@@ -130,6 +128,7 @@ h4 {
   text-align: center;
   line-height: 44px;
   font-size: 13px;
+  margin: 83px auto 0;
 }
 .main-button::after {
   content: "";
