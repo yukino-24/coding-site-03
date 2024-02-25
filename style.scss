@@ -19,6 +19,7 @@ $accent-color:#FFF100;
     text-align: center;
     line-height: 44px;
     font-size: 13px;
+    font-weight: bold;
 }
 // 共通
 .pc-only{
@@ -29,11 +30,19 @@ $accent-color:#FFF100;
 }
 .wrap{
     padding: 0 30px;
+    max-width: 1080px;
+    @include pc{
+        padding: 0 30px;
+        margin: 0 auto;
+    }
 }
 
 h1{
     font-size: 24px;
     font-weight: bold;
+    @include pc{
+        font-size: 36px;
+    }
 }
 
 p{
@@ -48,28 +57,40 @@ h4{
 // ヘッダー
 .header{
     &__top{
+        margin-top: 26px;
         @include pc{
         display: flex;
         justify-content: space-between;
         align-items: center;
-    
+        margin-top: 35px;
+        img{
+           width: 100%;
+           max-width: 358px;
         }
-        .logo{
-            margin-top: 26px;
-            text-align: center;
-    
         }
         .top-button{
-            
            @include button;
-           border: 1px double #FFFFFF;
-           border-radius: 12px;
+           margin-left: 10px;
+           padding: 3px;
+           &__link{
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px double #FFFFFF;
+           }
         }
     }
     
     &__nav{
         margin-top: 21px;
         font-size: 11px;
+        @include pc{
+            margin-top: 35px;
+        }
+
         .current{
            color: $nav-current;
         }
@@ -79,18 +100,42 @@ h4{
 .mv{
     img{
         margin-top: 18px;
+        width: 100%;
+        height: 500px;
     }
 }
 
 // コンテナ
 .main-title{
     margin-top: 43px;
+    @include pc{
+        margin-top: 70px;
+    }
 }
 .main-text{
     margin-top: 24px;
+    line-height: 1.6;
+    @include pc{
+        margin-top: 30px;
+    }
 }
 .main-container{
     margin: 83px 54px 0;
+    @include pc{
+       margin: 100px auto 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        &:nth-of-type(3n){
+            margin-right: 0;
+        }
+        @include pc{
+            width:  28%;
+            margin-right: 8%;
+            margin-bottom: 70px;
+        }
+    }
     &__icon{
         margin: 0 auto;
         width: 210px;
@@ -104,7 +149,7 @@ h4{
         }
     }
     &__title{
-        margin-top: 38px;
+        margin-top: 37px;
         font-weight: bold;
         .new{
             display: block;
@@ -157,17 +202,50 @@ h4{
    
 }
 
+.banner-container{
+    @include pc{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    &__item{
+        width: 219px;
+        height: 72px;
+        background-color: #DDDDDD;
+        margin-left: 48px;
+        margin-top: 26px;
+        text-align: center;
+        line-height: 72px;
+        &:nth-child(1){
+            margin-left: 0;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+}
+
 // フッター
 footer{
     background-color: $back-ground;
 .footer-container{
-     margin-top: 83px;
-
+     margin-top: 48px;
+     @include pc{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 49px;
+        align-items: flex-start;
+     } 
         &__link{
             display: flex;
             padding-top: 28px;
             flex-wrap: wrap;
             justify-content: center;
+           
+            @include pc{
+                padding-top: 0;
+                margin-left: calc(529 / 1600 * 100%);
+            }
             li{
                 margin:10px 10px 0 0;
                 width: 120px;
@@ -182,6 +260,9 @@ footer{
     }
 .footer-container__text{
     margin-top: 25px;
+    @include pc{
+      margin-top: 0;
+    }
     p{
         margin-top: 17px;
         font-size: 12px;
@@ -192,5 +273,9 @@ footer{
     padding-top: 35px;
     padding-bottom: 34px;
     font-size: 12px;
-    
-}
+    @include pc{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+     }
+    }
