@@ -1,3 +1,8 @@
+@charset "UTF-8";
+body {
+  font-family: "メイリオ", "Meiryo", sans-serif;
+}
+
 .pc-only {
   display: none;
 }
@@ -147,8 +152,12 @@ h4 {
 .main-container__title {
   margin-top: 37px;
   font-weight: bold;
+  position: relative;
 }
 .main-container__title .new {
+  position: absolute;
+  top: -22px;
+  left: -22px;
   display: block;
   height: 25px;
   width: 24px;
@@ -157,7 +166,6 @@ h4 {
   font-size: 7px;
   line-height: 25px;
   text-align: center;
-  margin-left: -24px;
 }
 .main-container__date {
   margin-top: 3px;
@@ -192,6 +200,11 @@ h4 {
   font-weight: bold;
   margin: 83px auto 0;
 }
+@media screen and (min-width: 767px) {
+  .main-button {
+    margin: 0 auto;
+  }
+}
 .main-button::after {
   content: "";
   display: inline-block;
@@ -211,16 +224,16 @@ h4 {
     flex-wrap: wrap;
   }
   .banner-container__item {
-    width: 219px;
+    width: 22%;
     height: 72px;
     background-color: #DDDDDD;
-    margin-left: 48px;
+    margin-right: 4%;
     margin-top: 26px;
     text-align: center;
     line-height: 72px;
   }
-  .banner-container__item:nth-child(1) {
-    margin-left: 0;
+  .banner-container__item:nth-of-type(4) {
+    margin-right: 0;
   }
   .banner-container__item p {
     font-size: 16px;
@@ -238,6 +251,7 @@ footer .footer-container {
     display: flex;
     flex-direction: row-reverse;
     padding-top: 49px;
+    justify-content: space-between;
     align-items: flex-start;
   }
 }
@@ -250,11 +264,10 @@ footer .footer-container__link {
 @media screen and (min-width: 767px) {
   footer .footer-container__link {
     padding-top: 0;
-    margin-left: 33.0625%;
+    width: 250px;
   }
 }
 footer .footer-container__link li {
-  margin: 10px 10px 0 0;
   width: 120px;
   height: 40px;
   background-color: #fff;
@@ -262,6 +275,10 @@ footer .footer-container__link li {
   text-align: center;
   line-height: 40px;
   font-size: 13px;
+  margin-bottom: 10px;
+}
+footer .footer-container__link li:nth-child(odd) {
+  margin-right: 10px;
 }
 footer .footer-container__text {
   margin-top: 25px;
@@ -274,6 +291,7 @@ footer .footer-container__text {
 footer .footer-container__text p {
   margin-top: 17px;
   font-size: 12px;
+  line-height: 1.7;
 }
 
 .copyright {

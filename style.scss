@@ -22,6 +22,9 @@ $accent-color:#FFF100;
     font-weight: bold;
 }
 // 共通
+body{
+    font-family: 'メイリオ','Meiryo',sans-serif;
+}
 .pc-only{
     display: none;
     @include pc{
@@ -151,7 +154,11 @@ h4{
     &__title{
         margin-top: 37px;
         font-weight: bold;
+        position: relative;
         .new{
+            position: absolute;
+            top: -22px;
+            left: -22px;
             display: block;
             height: 25px;
             width: 24px;
@@ -160,7 +167,7 @@ h4{
             font-size: 7px;
             line-height: 25px;
             text-align: center;
-            margin-left: -24px;
+            
         }
         }
     &__date{
@@ -188,6 +195,9 @@ h4{
 .main-button{
    @include button;
    margin: 83px auto 0;
+   @include pc{
+    margin: 0 auto;
+   }
     &::after{
         content: "";
         display: inline-block;
@@ -208,15 +218,15 @@ h4{
     display: flex;
     flex-wrap: wrap;
     &__item{
-        width: 219px;
+        width: 22%;
         height: 72px;
         background-color: #DDDDDD;
-        margin-left: 48px;
+        margin-right: 4%;
         margin-top: 26px;
         text-align: center;
         line-height: 72px;
-        &:nth-child(1){
-            margin-left: 0;
+        &:nth-of-type(4){
+            margin-right: 0;
         }
         p{
             font-size: 16px;
@@ -231,9 +241,11 @@ footer{
 .footer-container{
      margin-top: 48px;
      @include pc{
+        
         display: flex;
         flex-direction: row-reverse;
         padding-top: 49px;
+        justify-content: space-between;
         align-items: flex-start;
      } 
         &__link{
@@ -241,13 +253,14 @@ footer{
             padding-top: 28px;
             flex-wrap: wrap;
             justify-content: center;
-           
+
             @include pc{
                 padding-top: 0;
-                margin-left: calc(529 / 1600 * 100%);
+                width: 250px;
+
+           
             }
             li{
-                margin:10px 10px 0 0;
                 width: 120px;
                 height: 40px;
                 background-color: #fff;
@@ -255,6 +268,10 @@ footer{
                 text-align: center;
                 line-height: 40px;
                 font-size: 13px;
+                margin-bottom: 10px;
+                &:nth-child(odd){
+                    margin-right: 10px;
+                }
             }
         }
     }
@@ -266,6 +283,7 @@ footer{
     p{
         margin-top: 17px;
         font-size: 12px;
+        line-height: 1.7;
     }
 }
 }
