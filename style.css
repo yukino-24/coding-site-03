@@ -18,7 +18,7 @@ body {
 }
 @media screen and (min-width: 767px) {
   .wrap {
-    padding: 0 30px;
+    margin: 0 30px;
     margin: 0 auto;
   }
 }
@@ -125,7 +125,12 @@ h4 {
     margin: 100px auto 0;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 30px;
+    max-width: 1080px;
   }
+}
+.main-container__item {
+  margin-bottom: 35px;
 }
 .main-container__item:nth-of-type(3n) {
   margin-right: 0;
@@ -198,7 +203,7 @@ h4 {
   line-height: 44px;
   font-size: 13px;
   font-weight: bold;
-  margin: 83px auto 0;
+  margin: 83px auto;
 }
 @media screen and (min-width: 767px) {
   .main-button {
@@ -219,7 +224,7 @@ h4 {
 
 @media screen and (min-width: 767px) {
   .banner-container {
-    margin-top: 100px;
+    margin-top: 126px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -243,9 +248,6 @@ h4 {
 footer {
   background-color: #F5F5F5;
 }
-footer .footer-container {
-  margin-top: 48px;
-}
 @media screen and (min-width: 767px) {
   footer .footer-container {
     display: flex;
@@ -253,6 +255,7 @@ footer .footer-container {
     padding-top: 49px;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 48px;
   }
 }
 footer .footer-container__link {
@@ -260,11 +263,13 @@ footer .footer-container__link {
   padding-top: 28px;
   flex-wrap: wrap;
   justify-content: center;
+  width: 250px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 767px) {
   footer .footer-container__link {
     padding-top: 0;
-    width: 250px;
+    margin: 0;
   }
 }
 footer .footer-container__link li {
@@ -305,4 +310,45 @@ footer .footer-container__text p {
     padding-top: 50px;
     padding-bottom: 30px;
   }
+}
+
+.list-bar {
+  margin: 119px 30px 113px;
+  border-top: 5px solid #1DDB07;
+  border-bottom: 5px solid #1DDB07;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 767px) {
+  .list-bar {
+    height: 69px;
+    margin: 104px auto 0;
+    padding: 0 32px;
+    max-width: 1080px;
+  }
+}
+.list-bar li {
+  display: inline;
+  font-size: 13px;
+  line-height: 59px;
+}
+.list-bar li:nth-child(1)::before {
+  content: "";
+  display: inline-block;
+  margin-right: 7px;
+  width: 14px;
+  height: 5px;
+  border-bottom: 1px solid #707070;
+  border-left: 1px solid #707070;
+  transform: skew(135deg);
+}
+.list-bar li:nth-child(3)::after {
+  content: "";
+  display: inline-block;
+  margin-left: 7px;
+  width: 14px;
+  height: 5px;
+  border-bottom: 1px solid #707070;
+  border-right: 1px solid #707070;
+  transform: skew(45deg);
 }/*# sourceMappingURL=style.css.map */
