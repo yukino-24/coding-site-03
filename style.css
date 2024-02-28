@@ -207,7 +207,7 @@ h4 {
 }
 @media screen and (min-width: 767px) {
   .main-button {
-    margin: 0 auto;
+    margin: 0 auto 100px;
   }
 }
 .main-button::after {
@@ -224,7 +224,6 @@ h4 {
 
 @media screen and (min-width: 767px) {
   .banner-container {
-    margin-top: 126px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -322,9 +321,9 @@ footer .footer-container__text p {
 @media screen and (min-width: 767px) {
   .list-bar {
     height: 69px;
-    margin: 104px auto 0;
+    margin: 104px auto 85px;
     padding: 0 32px;
-    max-width: 1080px;
+    max-width: 1020px;
   }
 }
 .list-bar li {
