@@ -47,6 +47,7 @@ $accent-color:#FFF100;
 // 共通
 body{
     font-family: 'メイリオ','Meiryo',sans-serif;
+    color: #333;
 }
 .pc-only{
     display: none;
@@ -148,7 +149,7 @@ h4{
 .main-container{
     margin: 83px 54px 0;
     @include pc{
-       margin: 100px auto 0;
+       margin: 100px auto 30px;
         display: flex;
         flex-wrap: wrap;
         padding: 0 30px;
@@ -354,10 +355,11 @@ footer{
 }
 
 // 詳細ページ
-main{
+.detail{
     display: flex;
     margin: 63px auto 0;
     max-width: 1080px;
+}
 .main{
     
     @include pc{
@@ -409,9 +411,21 @@ main{
         background-color: #CCCCCC;
         margin: 25px auto 0;
         border-radius: 20px;
-       
+        
         @include pc{
             margin-top: 32px;
+            float: right;
+            width: 274px;
+            height: 188px;
+            margin-left: 30px;
+          
+        }
+    }
+    &__picture-reverse{
+        @include pc{
+            float: left;
+            margin-right: 30px;
+            margin-left: 0;
         }
     }
     &__text{
@@ -456,5 +470,4 @@ main{
         }
       
     }
-}
 }

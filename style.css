@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: "メイリオ", "Meiryo", sans-serif;
+  color: #333;
 }
 
 .pc-only {
@@ -133,7 +134,7 @@ h4 {
 }
 @media screen and (min-width: 767px) {
   .main-container {
-    margin: 100px auto 0;
+    margin: 100px auto 30px;
     display: flex;
     flex-wrap: wrap;
     padding: 0 30px;
@@ -363,26 +364,27 @@ footer .footer-container__text p {
   transform: skew(45deg);
 }
 
-main {
+.detail {
   display: flex;
   margin: 63px auto 0;
   max-width: 1080px;
 }
+
 @media screen and (min-width: 767px) {
-  main .main {
+  .main {
     width: 70%;
   }
 }
-main .main__title {
+.main__title {
   margin: 32px 0;
 }
 @media screen and (min-width: 767px) {
-  main .main__title {
+  .main__title {
     margin-top: 0;
     margin-bottom: 48px;
   }
 }
-main .main__icon {
+.main__icon {
   margin: 0 auto;
   width: 210px;
   height: 210px;
@@ -390,21 +392,21 @@ main .main__icon {
   border-radius: 50%;
   display: flex;
 }
-main .main__icon img {
+.main__icon img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-main .main__date {
+.main__date {
   font-size: 11px;
   margin-top: 32px;
 }
-main .main__sns {
+.main__sns {
   display: flex;
   margin-top: 8px;
   margin-bottom: 76px;
 }
-main .main__sns li {
+.main__sns li {
   width: 34px;
   height: 34px;
   border: 1px solid #707070;
@@ -413,17 +415,17 @@ main .main__sns li {
   line-height: 34px;
   margin-left: 4px;
 }
-main .main__sns li:nth-child(1) {
+.main__sns li:nth-child(1) {
   margin-left: 0;
 }
-main .main__content {
+.main__content {
   margin: 0 auto;
 }
-main .main__sub-title {
+.main__sub-title {
   margin-top: 50px;
   font-weight: bold;
 }
-main .main__picture {
+.main__picture {
   width: 315px;
   height: 216px;
   background-color: #CCCCCC;
@@ -431,15 +433,26 @@ main .main__picture {
   border-radius: 20px;
 }
 @media screen and (min-width: 767px) {
-  main .main__picture {
+  .main__picture {
     margin-top: 32px;
+    float: right;
+    width: 274px;
+    height: 188px;
+    margin-left: 30px;
   }
 }
-main .main__text {
+@media screen and (min-width: 767px) {
+  .main__picture-reverse {
+    float: left;
+    margin-right: 30px;
+    margin-left: 0;
+  }
+}
+.main__text {
   margin-top: 24px;
   line-height: 24px;
 }
-main .main__button {
+.main__button {
   color: #FFFFFF;
   width: 240px;
   height: 44px;
@@ -451,7 +464,7 @@ main .main__button {
   font-weight: bold;
   margin: 50px auto 0;
 }
-main .main__button::after {
+.main__button::after {
   content: "";
   display: inline-block;
   margin-left: 21px;
@@ -462,35 +475,36 @@ main .main__button::after {
   border-right: 1px solid #FFFFFF;
   transform: skew(45deg);
 }
-main .aside {
+
+.aside {
   margin-right: 30px;
 }
-main .aside__title {
+.aside__title {
   font-size: 24px;
   font-weight: bold;
 }
-main .aside__content {
+.aside__content {
   width: 258px;
   margin-top: 16px;
 }
-main .aside__content:nth-last-child(1) {
+.aside__content:nth-last-child(1) {
   border-bottom: 1px dashed #727272;
 }
-main .aside__detail {
+.aside__detail {
   border-top: 1px dashed #727272;
 }
-main .aside__detail a {
+.aside__detail a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 24px 0;
 }
-main .aside__detail a img {
+.aside__detail a img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   border: 2px solid #F1F1F1;
 }
-main .aside__detail a div {
+.aside__detail a div {
   margin-left: 10px;
 }/*# sourceMappingURL=style.css.map */
