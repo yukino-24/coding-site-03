@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>スタッフ一覧｜テラノプロダクション</title>
 </head>
 <body>
     <header class="header">
         <div class="header__top wrap">
             
-            <img src="img/logo.svg" width="238px" alt="">
+            <img src="img/logo.svg" width="268px" alt="">
         
             <div class="top-button button_frame pc-only">
                 <a href="" class="top-button__link">スタッフ紹介
                 </a>
             </div>
         </div>
-        <p class="header__nav wrap">
-            <a href="#" class="current">HOME > スタッフ紹介</a> スタッフ一覧
+        <ol class="header__nav wrap">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">&nbsp;&gt;&nbsp;スタッフ紹介</a></li>
+            <li>&nbsp;&gt;&nbsp;スタッフ一覧</li>
           
-        </p>
+        </ol>
     </header>
     <main>
-        <h1 class="main-title wrap">スタッフ紹介</h1>
+      <div class="container">
+        <h1 class="main-title">スタッフ一覧</h1>
         
         <ul class="main-container ">
             <li class="main-container__item item_new">
@@ -125,13 +128,11 @@
               </li>
         </ul>
         <ul class="list-bar">
-            <li><a href="">前へ</a></li>
-            <li>1/1</li>
-            <li><a href="">次へ</a></li>
+            <li class="prev"><a href="">前へ</a></li>
+            <li>1 / 1</li>
+            <li class="after"><a href="">次へ</a></li>
         </ul>
-        
-        
-        <ul class="banner-container pc-only wrap">
+        <ul class="banner-container pc-only">
             <li class="banner-container__item">
               <p>バナー</p>  
             </li>
@@ -151,6 +152,7 @@
                 <p>バナー</p>  
               </li>
         </ul>
+      </div>
       
     </main>
     <footer>
